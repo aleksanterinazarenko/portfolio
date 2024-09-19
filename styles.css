@@ -55,7 +55,7 @@ main {
 
 .content p {
     font-size: 18px; /* Rozmiar tekstu w paragrafach */
-    line-height: 1.3;
+    line-height: 1.25;
     margin-bottom: 0;
 }
 
@@ -67,9 +67,14 @@ main {
     border: 1px solid #ffffff; /* Biała ramka */
 }
 
+.blog-post p {
+    font-size: 18px; /* Rozmiar tekstu w paragrafach */
+    line-height: 1.25;
+}
+
 .read-more {
     display: inline-block;
-    margin-top: 10px; /* Margines górny dla przycisku */
+    margin-top: 25px; /* Margines górny dla przycisku */
     text-decoration: none;
     color: #ffffff; /* Kolor przycisku */
     border: 1px solid #ffffff; /* Biała ramka */
