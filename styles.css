@@ -55,6 +55,8 @@ main {
 
 .content p {
     font-size: 18px; /* Rozmiar tekstu w paragrafach */
+    line-height: 1.3;
+    margin-bottom: 0;
 }
 
 .blog-post {
@@ -113,7 +115,7 @@ main {
 }
 
 .profile-pic {
-    width: 200px; /* Ustaw szerokość zdjęcia */
+    width: 260px; /* Ustaw szerokość zdjęcia */
     height: auto; /* Utrzymanie proporcji */
     display: block; /* Wyświetl zdjęcie jako blok */
     border-radius: 10px;
