@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Inria Sans', sans-serif;
+    color: white;
+    background: url('lake-sunset-clouds-trees-wallpaper-38a6ec5abfcc07791ee099f292390ba0.jpg') no-repeat center center fixed; /* Dodaj ścieżkę do zdjęcia */
+    background-size: cover; /* Tło dopasowuje się do wielkości ekranu */
+}
+
+header {
+    background-color: rgba(0, 123, 184, 0.5); /* Przezroczyste tło dla nagłówka */
+    padding: 20px;
+    text-align: center;
+}
+
+.header-link {
+    color: white; /* Kolor tekstu */
+    text-decoration: none; /* Usunięcie podkreślenia */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex; /* Użyj flexboxa */
+    justify-content: space-between; /* Rozkład równomierny */
+    padding: 20px;
+    margin: 0 50px;
+}
+
+.content {
+    flex: 3; /* Ustaw proporcje na 3:1 */
+    padding: 50px;
+    margin-top: 50px;
+    background-color: rgba(0, 123, 184, 0.5);
+    border-radius: 10px;
+}
+
+.content h2 {
+    font-size: 24px; /* Rozmiar nagłówka 2 */
+    margin: 0; /* Margines dla nagłówka 2 */
+}
+
+.content p {
+    font-size: 18px; /* Rozmiar tekstu w paragrafach */
+}
+
+.blog-post {
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 50px; /* Marginesy między postami */
+    color: white;
+    border: 1px solid #ffffff; /* Biała ramka */
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px; /* Margines górny dla przycisku */
+    text-decoration: none;
+    color: #ffffff; /* Kolor przycisku */
+    border: 1px solid #ffffff; /* Biała ramka */
+    padding: 5px 10px; /* Padding dla przycisku */
+    border-radius: 5px; /* Zaokrąglenie rogów */
+}
+
+.gadget-container {
+    flex: 1; /* Ustaw proporcje na 3:1 */
+    margin-top: 50px; /* Dopasuj margines górny */
+    text-align: center;
+}
+
+.gadget-title {
+    font-size: 20px;
+    margin-bottom: 30px; /* Odstęp między tytułem a gadżetem */
+    text-align: center;
+    margin-left: 70px;
+}
+
+.gadget {
+    width: 300px; /* Możesz dostosować szerokość */
+    height: 300px;
+    background-color: rgba(0, 123, 184, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-left: 70px;
+}
+
+.english {
+    font-size: 18px;
+}
+
+.finnish {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.polish {
+    font-size: 18px;
+}
+
+.profile-pic {
+    width: 200px; /* Ustaw szerokość zdjęcia */
+    height: auto; /* Utrzymanie proporcji */
+    display: block; /* Wyświetl zdjęcie jako blok */
+    border-radius: 10px;
+    float: left;
+    margin-right: 50px;
+}
+
+footer {
+    background-color: rgba(0, 123, 184, 0.5); /* Kolor tła stopki */
+    color: white; /* Kolor tekstu */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    padding: 10px; /* Odstęp wewnętrzny */
+    font-size: 18px; /* Rozmiar tekstu */
+    margin-top: 50px; /* Dodaj margines nad stopką */
+}
