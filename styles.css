@@ -55,8 +55,12 @@ main {
 
 .content p {
     font-size: 18px; /* Rozmiar tekstu w paragrafach */
-    line-height: 1.25;
+    line-height: 1.5;
     margin-bottom: 0;
+}
+
+.content a {
+    color: white; /* Ustawia kolor tekstu linków na biały */
 }
 
 .blog-post {
