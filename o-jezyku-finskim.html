@@ -6,9 +6,11 @@
     <title>Lekcje Języka Fińskiego Online</title>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
+        <a href="index.html"><img src="Flag_of_Finland.png" alt="Logo" class="logo"></a>
         <h1><a href="index.html" class="header-link">Lekcje Języka Fińskiego Online</a></h1>
         <nav>
             <ul>
@@ -17,24 +19,24 @@
                 <li><a href="o-mnie.html">O Mnie</a></li>
                 <li><a href="oferta.html">Oferta</a></li>
                 <li><a href="https://wa.me/48691849245">WhatsApp</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Materiały do nauki</a></li>
+                <li><a href="https://www.facebook.com/lekcje.finskiego.online/">Facebook</a></li>
+                <li><a href="materialy-do-nauki.html">Materiały do nauki</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div class="content">
-            <h2>Skąd się wziął język fiński?</h2>
-            <p>Fiński, podobnie jak estoński oraz mniej znane w Polsce języki ingryjski, wepski i de facto wymarły liwoński, należy do bałtycko-fińskiej podgrupy języków uralskich. Język prauralski, z którego wywodzą się także język węgierski oraz języki małych narodów Rosji, takie jak erzjański, udmurcki i mansyjski, istniał na obszarze między basenem Wołgi a Uralem około 6000 lat temu.
+            <h2>Skąd się wziął język fiński?</h2><br>
+            <p>Fiński, podobnie jak estoński oraz mniej znane w Polsce języki ingryjski, wepski i de facto wymarły liwoński, należy do bałtycko-fińskiej podgrupy języków uralskich. Język prauralski, z którego wywodzą się także język węgierski oraz języki małych narodów Rosji, takie jak erzjański, udmurcki i mansyjski, był używany na obszarze między basenem Wołgi a Uralem około 5000 lat temu, a na tereny dzisiejszej Finlandii dotarł około 2500 lat temu w wyniku migracji części plemion ugrofińskich na zachód i asymilacji ludności autochtonicznej, najprawdopodobniej pochodzenia bałtyckiego.
                 <br><br>
-                A więc język fiński nie jest językiem indoeuropejskim tak jak większość języków Europy <a href="https://aleksanterinazarenko.github.io/interactivemap-europe/">[zobacz językową mapę Europy]</a>. Mimo całkiem sporej ilości zapożyczeń germańskich, bałtyckich i bardziej odległych czasowo zapożyczeń irańskich i praindoeuropejskich (porównaj fińskie vesi, veden i praindoeuropejskie *wed- 'woda'), posiada on szereg cech charakterystycznych dla rodziny uralskiej oraz uralsko-ałtajskiej ligi językowej, takich jak:<br><br>
-                - brak form czasu przyszłego<br>
-                - brak rodzajów gramatycznych<br>
-                - aglutynacyjność (tworzenie kategorii gramatycznych za pomocą przyrostków)<br>
-                - metafonia (harmonia samogłosek)
+                A więc język fiński nie jest językiem indoeuropejskim, tak jak większość języków Europy <a href="https://aleksanterinazarenko.github.io/interactivemap-europe/" target="_blank">[zobacz mapę]</a>. Mimo całkiem sporej ilości zapożyczeń germańskich, bałtyckich oraz bardziej odległych czasowo zapożyczeń irańskich i praindoeuropejskich (porównaj fińskie vesi, vede- i praindoeuropejskie *wed- 'woda'), fiński posiada szereg cech charakterystycznych dla rodziny uralskiej i tzw. uralsko-ałtajskiej ligi językowej, takie jak:<br><br>
+                • aglutynacyjność (tworzenie kategorii gramatycznych i różnego rodzaju relacji za pomocą rozbudowanego systemu przyrostków)<br>
+                • brak form czasu przyszłego<br>
+                • brak rodzajów gramatycznych<br>
+                • metafonia (harmonia samogłosek)
                 <br><br>
-                Niektóre z tych zjawisk mogą wydawać się zupełnie obce, choć w rzeczywistości mają miejsce w językach indoeuropejskich. Przykładem może być przypadek partitivus, czyli cząstkownik (fiń. partitiivi, osanto), oznaczający najczęściej niepoliczalną część pewnej całości. Można go znaleźć w polskim zdaniu: „Daj mi wody” (fiń. „Anna minulle vettä”), gdzie forma „wody” oznacza niewielką ilość. Również stosowanie form czasu teraźniejszego zamiast czasu przyszłego występuje w niektórych sytuacjach w języku polskim: „Jutro idę do kina z przyjaciółmi.” (fiń. „Menen huomenna elokuviin ystävieni kanssa”).</p>
+                Niektóre z tych zjawisk mogą wydawać się zupełnie obce, choć w rzeczywistości mają miejsce w językach indoeuropejskich. Przykładem może być przypadek partitivus, czyli cząstkownik (fiń. partitiivi, osanto), oznaczający najczęściej niepoliczalną część pewnej całości. Można go znaleźć w polskim zdaniu: „Daj mi wody” (fiń. „Anna minulle vettä”), gdzie forma „wody” oznacza niewielką ilość. Również stosowanie form czasu teraźniejszego zamiast czasu przyszłego może występować w języku polskim: „Jutro idę do kina z przyjaciółmi.” (fiń. „Menen huomenna elokuviin ystävieni kanssa”).</p>
         </div>
     
         <div class="gadget-container">
@@ -43,6 +45,8 @@
                 <div class="english" id="english"></div>
                 <div class="finnish" id="finnish"></div>
                 <div class="polish" id="polish"></div>
+            </div>
+            <button class="randomize-button" onclick="randomizeWord()">Losuj</button>
             </div>
         </div>
     </main>

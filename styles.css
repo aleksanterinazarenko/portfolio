@@ -17,6 +17,18 @@ header {
     text-decoration: none; /* Usunięcie podkreślenia */
 }
 
+header .logo {
+    height: 1.5em;
+    margin-right: 30px; /* Odstępy po bokach tekstu */
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 32px; /* Rozmiar tekstu */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -121,6 +133,21 @@ main {
 
 .polish {
     font-size: 18px;
+}
+
+.randomize-button {
+    display: inline-block;
+    margin-top: 25px; /* Margines górny dla przycisku */
+    text-decoration: none;
+    color: #ffffff; /* Kolor tekstu przycisku */
+    border: 1px solid #ffffff; /* Biała ramka */
+    padding: 5px 10px; /* Padding dla przycisku */
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    background-color: transparent; /* Transparentne tło (jak w przycisku .read-more) */
+    cursor: pointer; /* Kursor wskazujący na możliwość kliknięcia */
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 16px;
+    margin-left: 70px;
 }
 
 .profile-pic {
