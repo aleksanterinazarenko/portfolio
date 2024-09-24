@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Inria Sans', sans-serif;
@@ -86,6 +90,11 @@ main {
 .blog-post p {
     font-size: 18px;
     line-height: 1.5;
+}
+
+.blog-post h2 {
+    font-size: 22px;
+    margin: 0;
 }
 
 .read-more {
