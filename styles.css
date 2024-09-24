@@ -6,12 +6,13 @@ body {
     margin: 0;
     font-family: 'Inria Sans', sans-serif;
     color: white;
-    background: url('lake-sunset-clouds-trees-wallpaper-38a6ec5abfcc07791ee099f292390ba0.jpg') no-repeat center center fixed;
+    background-color: #ADD8E6;
+    background: url('tree-cloud-water-lake-620ae27917076129d68ad239fb97419b.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
 header {
-    background-color: rgba(0, 123, 184, 0.5);
+    background-color: rgba(0, 100, 150, 0.75);
     padding: 20px;
     text-align: center;
 }
@@ -60,7 +61,7 @@ main {
     flex: 3;
     padding: 50px;
     margin-top: 50px;
-    background-color: rgba(0, 123, 184, 0.5);
+    background-color: rgba(0, 100, 150, 0.75);
     border-radius: 10px;
 }
 
@@ -123,7 +124,7 @@ main {
 .gadget {
     width: 300px;
     height: 300px;
-    background-color: rgba(0, 123, 184, 0.5);
+    background-color: rgba(0, 100, 150, 0.75);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -169,7 +170,7 @@ main {
 }
 
 footer {
-    background-color: rgba(0, 123, 184, 0.5);
+    background-color: rgba(0, 100, 150, 0.75);
     color: white;
     text-align: center;
     padding: 10px;
