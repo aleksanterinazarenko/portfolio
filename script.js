@@ -18,6 +18,8 @@ async function displayRandomWord() {
     document.getElementById('polish').textContent = randomWord.Polish;
 }
 
+window.onload = displayRandomWord;
+
 async function randomizeWord() {
     const words = await fetchWords();
     const randomWord = getRandomWord(words);
