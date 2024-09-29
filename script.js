@@ -18,13 +18,18 @@ async function displayRandomWord() {
     document.getElementById('polish').textContent = randomWord.Polish;
 }
 
-window.onload = displayRandomWord;
-
 async function randomizeWord() {
     const words = await fetchWords();
     const randomWord = getRandomWord(words);
 
-    document.getElementById('english').textContent = randomWord.English;
-    document.getElementById('finnish').textContent = randomWord.Finnish;
-    document.getElementById('polish').textContent = randomWord.Polish;
+    setTimeout(() => {
+        document.getElementById('english').textContent = randomWord.English;
+        document.getElementById('finnish').textContent = randomWord.Finnish;
+        document.getElementById('polish').textContent = randomWord.Polish;
+    }, 100);
 }
+
+window.onload = () => {
+    displayRandomWord();
+    document.getElementById('randomize-button').onclick = randomizeWord;
+};
