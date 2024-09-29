@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     font-family: 'Inria Sans', sans-serif;
-    color: white;
+    color: #f9f9f9ff;
     background-color: #ADD8E6;
     background: url('minimal-sunset-color-line-tree-line-1961a0b19cd0df68bf00266c5e2c3c17-2.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -18,7 +18,7 @@ header {
 }
 
 .header-link {
-    color: white;
+    color: #f9f9f9ff;
     text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ nav ul li {
 }
 
 nav a {
-    color: white;
+    color: #f9f9f9ff;
     text-decoration: none;
 }
 
@@ -77,15 +77,15 @@ main {
 }
 
 .content a {
-    color: white;
+    color: #f9f9f9ff;
 }
 
 .blog-post {
     border-radius: 10px;
     padding: 30px;
     margin-top: 50px;
-    color: white;
-    border: 1px solid #ffffff;
+    color: #f9f9f9ff;
+    border: 1px solid #f9f9f9ff;
 }
 
 .blog-post p {
@@ -102,8 +102,8 @@ main {
     display: inline-block;
     margin-top: 25px;
     text-decoration: none;
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    color: #f9f9f9ff;
+    border: 1px solid #f9f9f9ff;
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -149,8 +149,8 @@ main {
     display: inline-block;
     margin-top: 25px;
     text-decoration: none;
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    color: #f9f9f9ff;
+    border: 1px solid #f9f9f9ff;
     padding: 5px 10px;
     border-radius: 5px;
     background-color: transparent;
@@ -175,7 +175,7 @@ main {
 
 footer {
     background: rgba(0, 0, 64, 0.5);
-    color: white;
+    color: #f9f9f9ff;
     text-align: center;
     padding: 10px;
     font-size: 18px;
