@@ -139,6 +139,8 @@ main {
 .finnish {
     font-size: 24px;
     font-weight: bold;
+    max-width: 300px;
+    overflow-wrap: break-word;
 }
 
 .polish {
@@ -158,6 +160,10 @@ main {
     font-family: 'Inria Sans', sans-serif;
     font-size: 16px;
     margin-left: 70px;
+}
+
+.flag {
+    margin-right: 5px;
 }
 
 .profile-pic {
