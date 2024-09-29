@@ -139,8 +139,6 @@ main {
 .finnish {
     font-size: 24px;
     font-weight: bold;
-    max-width: 300px;
-    overflow-wrap: break-word;
 }
 
 .polish {
