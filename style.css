@@ -1,0 +1,380 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f91c;
+    color: #333;
+    background-image: url('#');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+nav .nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: normal;
+    text-align: center;
+    color: #162d50ff;
+    margin: 50px;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+main {
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    flex-grow: 1;
+}
+
+p {
+    color: #333;
+    line-height: 1.5;
+    margin: 0 auto 3px;
+    padding: 0 50px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+footer {
+    background-color: #333;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 17px;
+}
+
+.container {
+    width: calc(100% - 200px);
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.container-grammar h2 {
+    font-size: 18px;
+}
+
+.dictionary {
+    width: calc(100% - 400px);
+    margin: 50px auto 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#wordDetails {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+
+#wordDetails:empty {
+    display: none;
+}
+
+.dictionary h2 {
+    color: #B22222;
+    line-height: 1.5;
+    margin: 30px auto 0;
+    padding: 10px 50px;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: none;
+}
+
+.dictionary p {
+    color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0 auto 30px;
+    padding: 10px 50px;
+    text-align: left;
+}
+
+tr {
+    vertical-align: top;
+}
+
+td {
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+
+td:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: separate;
+}
+
+.table td {
+    padding: 0 30px;
+    vertical-align: top;
+    position: relative;
+}
+
+.table p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.nav-list a.active {
+    text-decoration: underline;
+}
+
+.content-container {
+    width: calc(100% - 200px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.blog-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.custom-text {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 250px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.read-more-dict {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#searchInput {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.suggestions-list {
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 0;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.highlight {
+    background-color: #f0f0f0;
+}
+
+#dictionaryList {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+#dictionaryList li {
+    padding: 15px 10px;
+    line-height: 1;
+    border-bottom: none;
+    background-color: transparent;
+}
+
+.word {
+    font-weight: regular;
+    font-size: 17px;
+}
+
+.definition {
+    font-style: italic;
+    font-size: 17px;
+}
+  
+#languageSelector {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.translator {
+    width: calc(100% - 200px);
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center; 
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+textarea {
+    font-size: 17px;
+    line-height: 24px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    min-height: 275px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.input-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.output-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+button#copyButton {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    cursor: pointer; 
+        }
+        button#copyButton:hover {
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .content-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');

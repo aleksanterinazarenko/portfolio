@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the spelling</title>
+    <link rel="stylesheet" href="style-mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <select id="nav-select" class="nav-select">
+            <option value="index-mobile.html">Main Page</option>
+            <option value="english-erzya-dictionary-mobile.html">English-Erzya dictionary</option>
+            <option value="erzya-english-dictionary-mobile.html">Erzya-English dictionary</option>
+            <option value="finnish-erzya-dictionary-mobile.html">Finnish-Erzya dictionary</option>
+            <option value="transliteration-tool-mobile.html">Transliteration tool</option>
+            <option value="about-the-spelling-mobile.html">About the spelling</option>
+            <option value="sources-mobile.html">Sources</option>
+        </select>
+    </header>
+
+    <style>
+        .nav-select {
+        width: 100%;
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .nav-select option {
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+    }
+        </style>
+
+    <main>
+        <a href="/learnerzya/index-mobile.html" style="color: #333; text-decoration: none;"><h1>Learn Erzya</h1></a>
+<div class="container">
+<p style="font-size: 16px; text-align: justify;">The Romanization of the Erzya language used in this dictionary is loosely based on the proposal used in the book by linguists Ksenija Djordjević and Jean-Léo Léonard, <a href="https://books.google.pl/books/about/Parlons_mordve.html?id=UTdXBLgYI_gC&amp;redir_esc=y" style="text-decoration: none;">Parlons mordve (erzya et mokša)</a>.<br /><br />❗ The transliteration tool may have some shortcomings due to the limitations of the Cyrillic script. It is recommended to use combinations like <i>ньа</i>, <i>дьа</i>, <i>дьу</i>, etc., in compound words such as <i>ведьава</i> (ведь+ава), <i>иньазор</i> (инь+азор), <i>зьаро</i> (зь+аро), etc.<br><br>❗ Moreover, the tool supports only Sentence case and lower case. UPPER CASE will not work correctly!</p>
+</div>
+</main>
+
+<script src="script.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.nav-list a');
+    const currentPath = window.location.pathname.split("/").pop();
+  
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        if (linkPath === currentPath) {
+            link.classList.add('active');
+        }
+    });
+  });
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var navSelect = document.getElementById('nav-select');
+    var currentPage = window.location.pathname.split('/').pop();
+    
+    for (var i = 0; i < navSelect.options.length; i++) {
+        if (navSelect.options[i].value === currentPage) {
+            navSelect.selectedIndex = i;
+            break;
+        }
+    }
+    
+    navSelect.addEventListener('change', function() {
+        window.location.href = this.value;
+    });
+});
+    </script>
+
+</body>
+</html>

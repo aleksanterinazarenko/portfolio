@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Erzya</title>
+    <link rel="stylesheet" href="style-mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <select id="nav-select" class="nav-select">
+            <option value="index-mobile.html">Main Page</option>
+            <option value="english-erzya-dictionary-mobile.html">English-Erzya dictionary</option>
+            <option value="erzya-english-dictionary-mobile.html">Erzya-English dictionary</option>
+            <option value="finnish-erzya-dictionary-mobile.html">Finnish-Erzya dictionary</option>
+            <option value="transliteration-tool-mobile.html">Transliteration tool</option>
+            <option value="about-the-spelling-mobile.html">About the spelling</option>
+            <option value="sources-mobile.html">Sources</option>
+        </select>
+    </header>
+
+    <main>
+        <a href="/learnerzya/index-mobile.html" style="color: #333; text-decoration: none;"><h1>Learn Erzya</h1></a>
+        <div class="container">
+            <table class="table">
+                <tr>
+                    <td>
+                        <h2>Welcome!</h2>
+                        <p style="text-align: justify;">The Erzya language is a Uralic language belonging to the Volga-Finnic subgroup, also known as the Mordvinic subgroup, of the Finno-Ugric languages. It is closely related to the Moksha language, and in the past, these two were considered dialects of the so-called 'Mordvin language'.<br><br>In the 2021 Russian census, around 50,000 people identified Erzya as their native language, with the majority living in the Republic of Mordovia. Erzya is one of the official languages of the Republic of Mordovia, alongside Russian and Moksha. While the official Erzya alphabet is identical to the Russian alphabet, scientific literature often uses various Latin-based systems to represent the language.<br><br>Source: <a href="https://en.wikipedia.org/wiki/" style="text-decoration: none;">Wikipedia</a></p>
+                    </td>
+                    <td>
+                        <h2>Paročisë sovado!</h2>
+                        <p style="text-align: justify;">Erzäń keľ te suomiń-ugrań semijanť suomiń-ravoń (lijaks: mordvań) taradonteń sovavtovicä uraloń keľ. Erzäń kelenteń vesemede malaviks keleś — mokšoń keľ. Ikele sïnst kavonest loviź vejsëń istä jovtaź ”mordvań keleń” dialektëks.<br><br>2021 ijeń vese Rasejeń lovnomasonť malav 50,000 lomanť tekšstïź erzäń kelenť tirineks, sïndest lamot eriť Mordovija Respublikaso. Erzäń keleś ašti eslempeleń keleks Mordovijaso, ruzoń dï mokšoń keltneń marto. Eslempeleń śormadoma kojezë ruzoń kondämo, teke škasto naukań literaturaso sejedstë noldtneviť tevs lamo lija, latinëń alfavitënť langs nežedeź sistemat.<br><br>Liśmaprä: <a href="https://myv.wikipedia.org/wiki/" style="text-decoration: none;">Wikipedia</a></p><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <a href="mailto:aleksanterinazarenko@outlook.com" style="color: white; text-decoration: none;">&copy; 2024 Aleksanteri Nazarenko</a>
+    </footer>
+
+    <style>
+    .nav-select {
+    width: 100%;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-select option {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+    </style>
+
+    <script src="script.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var navSelect = document.getElementById('nav-select');
+    var currentPage = window.location.pathname.split('/').pop();
+    
+    for (var i = 0; i < navSelect.options.length; i++) {
+        if (navSelect.options[i].value === currentPage) {
+            navSelect.selectedIndex = i;
+            break;
+        }
+    }
+    
+    navSelect.addEventListener('change', function() {
+        window.location.href = this.value;
+    });
+});
+    </script>
+
+</body>
+</html>
